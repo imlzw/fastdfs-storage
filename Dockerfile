@@ -38,7 +38,7 @@ RUN wget "https://github.com/happyfish100/libfastcommon/archive/V${LIB_FAST_COMM
 RUN wget "https://github.com/happyfish100/fastdfs/archive/V${FASTDFS_VERSION}.tar.gz" -P ${FASTDFS_PATH}/download/fastdfs
 RUN git clone https://github.com/happyfish100/fastdfs-nginx-module.git ${FASTDFS_PATH}/download/nginx_module
 # 指定fastdfs-nginx-module版本
-RUN cd ${FASTDFS_PATH}/download/nginx_module && git checkout 5a8110f57ec55ff580260cf1fc6aa152a5a4c574 
+RUN cd ${FASTDFS_PATH}/download/nginx_module && git checkout 5a8110f57ec55ff580260cf1fc6aa152a5a4c574
 RUN wget "http://nginx.org/download/nginx-${NGINX_VERSION}.tar.gz" -P ${FASTDFS_PATH}/download/nginx 
 RUN tar zxvf ${FASTDFS_PATH}/download/libfastcommon/V${LIB_FAST_COMMON_VERSION}.tar.gz -C ${FASTDFS_PATH}/download/libfastcommon \
  && tar zxvf ${FASTDFS_PATH}/download/fastdfs/V${FASTDFS_VERSION}.tar.gz -C ${FASTDFS_PATH}/download/fastdfs \
