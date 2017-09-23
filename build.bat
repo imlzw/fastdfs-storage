@@ -1,1 +1,1 @@
-docker build -t imlzw/fastdfs-storage ./
+docker build -t manuku/fastdfs-storage ./
